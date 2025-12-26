@@ -5,11 +5,11 @@ import Score from './Score/Score'
 
 function App() {
 
-  const [score, setScore] = useState(0);
+const [score, setScore] = useState(0);
 
-  function updateScore = (prev) => {
-    setScore = prev +1;
-  }
+function updateScore() {
+  setScore(prev => prev + 1);
+}
 
   const [streak, setStreak] = useState(0)
 
