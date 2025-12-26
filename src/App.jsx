@@ -5,12 +5,24 @@ import Score from './Score/Score'
 
 function App() {
 
+  const [score, setScore] = useState(0);
+
+  function updateScore = (prev) => {
+    setScore = prev +1;
+  }
+
+  const [streak, setStreak] = useState(0)
+
+  function updateStreak(score) {
+    setStreak(prev => (score > prev ? score : prev));
+  }
 
   return (
     <>
       <div className="top-container">
         <Header />
-        <Score />
+        <Score
+            score = {score, streak} />
       </div>
     </>
   )
