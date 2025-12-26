@@ -1,0 +1,9 @@
+h1{
+    font-size: clamp(1rem, 5vw, 4rem);
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.background{
+    margin: 1rem;
+}
