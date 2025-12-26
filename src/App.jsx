@@ -17,6 +17,17 @@ useEffect(() => {
   }, []);
 
 /*FUNCTIONS*/
+function shuffledArray(images) {
+  const shuffledImgs = [...images]
+  for (let i = shuffledImgs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledImgs[i], shuffledImgs[j]] = [shuffledImgs[j], shuffledImgs[i]];
+  }
+  return shuffledImgs;
+}
+
+
+
 function updateScore() {
     setScore(prev => prev + 1);
 }
