@@ -1,13 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './Header/Header'
+import Score from './Score/Score'
 
 function App() {
 
 
   return (
     <>
-      <Header />
+      <div className="top-container">
+        <Header />
+        <Score />
+      </div>
     </>
   )
 }

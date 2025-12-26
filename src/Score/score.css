@@ -1,0 +1,12 @@
+.scoreCard{
+    margin: 1rem;
+}
+
+.scoreCard span{
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.scoreCard p{
+    font-size: 1.25rem;
+}
