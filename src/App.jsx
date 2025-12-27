@@ -89,7 +89,7 @@ async function getData() {
       </div>
       <div className= "card-container">
         {images.map(({ id, url }) => (
-        <Card key={id} id={id} url={url} />
+        <Card key={id} id={id} url={url} onClick= {() => updateClicked(id)} />
       ))}
       </div>
     </>
