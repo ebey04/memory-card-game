@@ -10,6 +10,7 @@ function App() {
 const [score, setScore] = useState(0);
 const [streak, setStreak] = useState(0);
 const [images, setImages] = useState([]);
+const [clickedIds, setClickedIds] = useState([]);
 
 /* EFFECTS */
 useEffect(() => {
@@ -25,6 +26,22 @@ function shuffledArray(images) {
   }
   return shuffledImgs;
 }
+
+function updateClicked(id) {
+  setClickedIds(prev => {
+    if (prev.includes(id)) {
+      updateStreak(score);
+      setScore(0);
+      setImages(shuffledArray(images));
+      return [];
+    }
+
+    updateScore();
+    setImages(shuffledArray(images));
+    return [...prev, id];
+  });
+}
+
 
 
 
