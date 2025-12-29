@@ -77,7 +77,7 @@ const ids = [
 
 async function getData() {
   const requests = ids.map(id =>
-    fetch(`https://api.unsplash.com/photos/${id}?client_id=wXHo9MNk5tc9IeL8O9Nuu712bI6_c8syaKe53EhyaxA`)
+    fetch(`https://api.unsplash.com/photos/${id}?client_id=${import.meta.env.VITE_UNSPLASH_KEY}`)
       .then(res => res.json())
   );
 
