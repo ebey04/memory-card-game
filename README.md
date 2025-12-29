@@ -10,7 +10,7 @@ Remember That Tamale is a browser-based memory game built with React components.
 ## 🎮 Features
 
 - Fully functional memory card game
-- API driven image retrieval
+- API-driven image retrieval using the Unsplash API
 - Randomized card placement
 - Keyboard accessible
 - Responsive design without the use of media queries
