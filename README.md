@@ -28,8 +28,11 @@ Remember That Tamale is a browser-based memory game built with React components.
 
 ## 🧩 What I Learned
 
-Through this build I grasped a better understanding of effect handling in React, with the help of useEffect(). \
-As my second React app this also taught me how to transfer vanilla JS building into React building with managing state logic.
+- Managing complex state interactions in React
+- Handling side effects safely with `useEffect`
+- Implementing shuffle logic without mutating state
+- Designing accessible interactive components
+- Translating game logic from vanilla JS into React state patterns
 
 ## 👏🏻 Acknowledgements 
 
