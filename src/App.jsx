@@ -36,7 +36,9 @@ function updateClicked(id) {
       return [];
     }
 
-    updateScore();
+    const nextScore = score + 1;
+
+    setScore(nextScore);
     setImages(shuffledArray(images));
     return [...prev, id];
   });
@@ -46,7 +48,7 @@ function updateClicked(id) {
 
 
 function updateScore() {
-    setScore(prev => prev + 1);
+    setScore(prev => prev + 1)
 }
 
 function updateStreak(score) {
