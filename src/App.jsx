@@ -20,6 +20,15 @@ useEffect(() => {
     getData().then(setImages);
   }, []);
 
+  useEffect(() => {
+    if (showMessage === true) {
+      const timer = setTimeout(() => {
+        setShowMessage(false);
+      }, 1300);
+      return () => clearTimeout(timer);
+    }
+  }, [showMessage]);
+
 /*FUNCTIONS*/
 function shuffledArray(images) {
   const shuffledImgs = [...images]
@@ -79,9 +88,6 @@ async function getData() {
     url: photo.urls.small,
   }));
 }
-
-
-
 
   return (
     <>
