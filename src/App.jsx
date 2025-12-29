@@ -44,9 +44,6 @@ function updateClicked(id) {
   });
 }
 
-
-
-
 function updateScore() {
     setScore(prev => prev + 1)
 }
