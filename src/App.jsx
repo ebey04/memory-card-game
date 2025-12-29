@@ -76,10 +76,13 @@ const ids = [
 ];
 
 async function getData() {
-  const requests = ids.map(id =>
-    fetch(`https://api.unsplash.com/photos/${id}?client_id=${import.meta.env.VITE_UNSPLASH_KEY}`)
-      .then(res => res.json())
-  );
+  const key = import.meta.env.VITE_UNSPLASH_KEY;
+
+  const requests = ids.map(async (id) => {
+    const res = await fetch(`https://api.unsplash.com/photos/${id}?client_id=${key}`);
+    if (!res.ok) throw new Error(`Unsplash error: ${res.status}`);
+    return res.json();
+  });
 
   const photos = await Promise.all(requests);
 
@@ -88,6 +91,7 @@ async function getData() {
     url: photo.urls.small,
   }));
 }
+
 
   return (
     <>
