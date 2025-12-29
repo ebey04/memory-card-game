@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header/Header'
 import Score from './Score/Score'
 import Card from './Card/Card'
+import Message from './Message/Message'
 
 function App() {
 
@@ -11,6 +12,8 @@ const [score, setScore] = useState(0);
 const [streak, setStreak] = useState(0);
 const [images, setImages] = useState([]);
 const [clickedIds, setClickedIds] = useState([]);
+const [showMessage, setShowMessage] = useState(false);
+
 
 /* EFFECTS */
 useEffect(() => {
@@ -30,12 +33,14 @@ function shuffledArray(images) {
 function updateClicked(id) {
   setClickedIds(prev => {
     if (prev.includes(id)) {
+      setShowMessage(true);
       updateStreak(score);
       setScore(0);
       setImages(shuffledArray(images));
       return [];
     }
 
+    setShowMessage(false);
     const nextScore = score + 1;
 
     setScore(nextScore);
@@ -90,6 +95,7 @@ async function getData() {
         {images.map(({ id, url }) => (
         <Card key={id} id={id} url={url} onClick= {() => updateClicked(id)} />
       ))}
+      <Message streak={streak} showMessage= {showMessage}/>
       </div>
     </>
   )
