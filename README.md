@@ -1,7 +1,7 @@
 # Remember That 🫔Tamale!
 _A memory card game where you can't click the same card twice._
 
-**Live Demo** → ()
+**Live Demo** → (https://memorgy-game-ebey04.netlify.app/)
 
 Remember That Tamale is a browser-based memory game built with React components.
 
