@@ -1,16 +1,38 @@
-# React + Vite
+# Remember That 🫔Tamale!
+_A memory card game where you can't click the same card twice._
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo** → ()
 
-Currently, two official plugins are available:
+Remember That Tamale is a browser-based memory game built with React components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎮 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fully functional memory card game
+- API driven image retrieval
+- Randomized card placement
+- Keyboard accessible
+- Responsive design without the use of media queries
+- Visual theme inspired by the 1957 show "Zorro" with Guy Williams
+- Respectful homage to Hispanic food culture
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **JSX**
+- **React** 
+- **HTML5 & CSS3**
+- **API Retrieval**
+
+---
+
+## 🧩 What I Learned
+
+Through this build I grasped a better understanding of effect handling in React, with the help of useEffect(). \
+As my second React app this also taught me how to transfer vanilla JS building into React building with managing state logic.
+
+## 👏🏻 Acknowledgements 
+
+Tamale photos found through Unsplash. \
+Background image by artist Leonardo Iribe, through Unsplash. \
+App built as part of The Odin Project. 
